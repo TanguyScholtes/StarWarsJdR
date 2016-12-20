@@ -23,6 +23,10 @@
 
         <main class="main-container">
             @yield( 'content' )
+
+            <p class="back-to-top">
+                <a class="back-to-top__link" href="#Banner">Retour en haut de la page</a>
+            </p>
         </main> <!-- .content -->
 
         @include( 'footer' )

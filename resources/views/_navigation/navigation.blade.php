@@ -4,7 +4,7 @@
 
         <a class="main-navigation--link" href="/">Accueil</a>
         <a class="main-navigation--link" href="/universe">Univers</a>
-        <a class="main-navigation--link" href="/rules">Règles de base</a>
+        <a class="main-navigation--link" href="/rules">Règles</a>
         <a class="main-navigation--link" href="/races">Races</a>
         <a class="main-navigation--link" href="/classes">Classes</a>
         <a class="main-navigation--link" href="/abilities">Caractéristiques</a>
