@@ -1,0 +1,530 @@
+/*--- Resets ---*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=PT+Serif);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*--- Fonts import ---*/
+/*--- Base styles ---*/
+/*--- Base styles ---*/
+html {
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 1em 0;
+}
+
+h2 {
+  font-size: 1.75em;
+  margin: 1em 0;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: 1.25em;
+  margin: 1em 0;
+}
+
+p {
+  margin: 1em 0;
+  line-height: 1.5em;
+}
+
+/*--- Variables ---*/
+/*--- Colors ---*/
+/*--- Main styles ---*/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+  body {
+    background-image: url("../img/background-mainx640.jpg");
+  }
+}
+
+/* Transition Smartphones - Tablets ----------- */
+@media only screen and (min-width: 641px) and (max-width: 767px) {
+  body {
+    background-image: url("../img/background-mainx767.jpg");
+  }
+}
+
+/* Tablets (portrait and landscape) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 798px) {
+  body {
+    background-image: url("../img/background-mainx1024.jpg");
+  }
+}
+
+@media only screen and (min-width: 799px) and (max-width: 1280px) {
+  body {
+    background-image: url("../img/background-mainx1280.jpg");
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1281px) {
+  body {
+    background-image: url("../img/background-mainx1824.jpg");
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  body {
+    background-image: url("../img/background-main.jpg");
+  }
+}
+
+body {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.hidden {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-style: hidden !important;
+}
+
+.centered {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.image-centered {
+  width: 200px;
+  display: block;
+  margin: 1em auto 3em auto;
+}
+
+/*--- Partials ---*/
+/*--- Banner ---*/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+  .banner {
+    width: 100%;
+  }
+}
+
+/* Others (portrait and landscape) ----------- */
+@media only screen and (min-width: 641px) {
+  .banner {
+    width: 80%;
+  }
+}
+
+.banner {
+  margin: 2em auto 1em auto;
+  text-align: center;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+  .title {
+    background-image: url("../img/site-banner_x320.png");
+    /* shows image */
+    width: 320px;
+    /* be sure to set height & width */
+    height: 157px;
+  }
+}
+
+/* Others (portrait and landscape) ----------- */
+@media only screen and (min-width: 641px) {
+  .title {
+    background-image: url("../img/site-banner75.png");
+    /* shows image */
+    width: 549px;
+    /* be sure to set height & width */
+    height: 273px;
+  }
+}
+
+.title {
+  margin: 0 auto;
+  /* Hide the text. */
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/*--- Navigation ---*/
+.navigation {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.navigation .main-navigation--link {
+  font-family: "Oswald", "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-align: center;
+  text-decoration: none;
+  color: #dba147;
+  text-shadow: 2px 2px 5px black;
+}
+
+.navigation .main-navigation--link:hover {
+  color: #ebc991;
+  text-decoration: underline;
+  text-shadow: 2px 2px 5px #dba147;
+}
+
+.sub-navigation {
+  margin: 0 auto 2em auto;
+  width: 98%;
+  text-align: center;
+}
+
+.sub-navigation .sub-navigation--link {
+  font-family: "Oswald", "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-align: center;
+  text-decoration: none;
+  color: #dba147;
+}
+
+.sub-navigation .sub-navigation--link:hover {
+  color: #ebc991;
+  text-decoration: underline;
+  text-shadow: 2px 2px 5px #dba147;
+}
+
+/*--- Footer ---*/
+.footer {
+  width: 80%;
+  text-align: center;
+  font-size: 0.8em;
+  margin: 2em auto;
+  text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+
+.source-link {
+  text-decoration: none;
+  color: #dba147;
+  text-shadow: 2px 2px 2px black;
+}
+
+.source-link:hover {
+  color: #ebc991;
+  text-decoration: underline;
+  text-shadow: 2px 2px 2px #dba147;
+}
+
+/*--- Borders ---*/
+.border-top {
+  background-image: url("../img/border-top.png");
+  background-position: 50% 0;
+  width: 950px;
+  height: 35px;
+  margin: -0.25em auto 1em auto;
+}
+
+.border-bottom {
+  background-image: url("../img/border-bottom.png");
+  background-position: 50% 0;
+  width: 952px;
+  height: 23px;
+  margin: 1.5em auto 1em auto;
+}
+
+/*--- Back to top link ---*/
+.back-to-top {
+  margin: 2em 0 0 0;
+}
+
+.back-to-top__link {
+  color: #dba147;
+  text-shadow: 2px 2px 5px black;
+}
+
+.back-to-top__link:hover {
+  color: #ebc991;
+  text-shadow: 2px 2px 5px #dba147;
+}
+
+/*--- Main Content ---*/
+main {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid black;
+  border-radius: 1em;
+  padding: 1.5em;
+}
+
+.page-title {
+  margin: 0 0 1.25em 0;
+  padding: 0 0 0.75em 0;
+  border-bottom: 1px solid #dba147;
+}
+
+.content {
+  border-bottom: 1px solid #dba147;
+  padding-bottom: 2em;
+}
+
+.content-doted-list {
+  list-style-type: disc;
+}
+
+.content-doted-list li {
+  margin-left: 2em;
+}
+
+.page-title-icon {
+  display: inline-block;
+  background-image: url("../img/title-icon.png");
+  width: 33px;
+  height: 30px;
+}
+
+.content-titles {
+  margin: 1em 0 0.5em 0;
+}
+
+.content-subtitle {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.content-list-item {
+  margin-bottom: 2em;
+  position: relative;
+}
+
+.content-list-item:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.content-image {
+  float: left;
+  margin: 0.5em 2em 1.5em 0;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.image-legend {
+  font-size: 0.65em;
+  color: #ebc991;
+}
+
+.image-link {
+  display: block;
+  width: 305px;
+  height: 255px;
+}
+
+.image-link:hover {
+  opacity: 0.8;
+}
+
+.content-link {
+  text-decoration: none;
+  color: #dba147;
+}
+
+.content-link:hover {
+  color: #ebc991;
+  text-decoration: underline;
+  text-shadow: 2px 2px 2px #dba147;
+}
+
+.content-table {
+  text-align: center;
+  margin: 1em auto;
+}
+
+.content-table th, .content-table td {
+  padding: 0.5em 1em;
+}
+
+.content-table th {
+  font-weight: bold;
+}
+
+.content-table tr:nth-child(2n) {
+  background-color: rgba(55, 55, 55, 0.5);
+}
+
+.content-table tbody > tr:hover {
+  background-color: rgba(100, 100, 100, 0.5);
+}
+
+.content-table thead {
+  border-bottom: 1px solid #dba147;
+}
+
+.ol {
+  list-style-type: decimal;
+  padding-left: 1.5em;
+}
+
+.prices {
+  white-space: nowrap;
+}
+
+.items-table {
+  width: 95%;
+  font-size: 0.85em;
+  line-height: 1.25em;
+}
+
+.race-image {
+  float: left;
+}
+
+.race-text {
+  padding-left: 264px;
+}
+
+/*--- choose.js selection styles ---*/
+.choose-menu {
+  text-align: center;
+}
+
+.choice {
+  font-family: "Oswald", "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-align: center;
+  text-decoration: none;
+  color: #dba147;
+}
+
+.choice:hover {
+  color: #ebc991;
+  text-decoration: underline;
+  text-shadow: 2px 2px 5px #dba147;
+}
+
+.universe-menu .galactic-republic {
+  transition: color 750ms ease, text-shadow 750ms ease;
+}
+
+.universe-menu .galactic-republic:hover {
+  color: #4461ae;
+  text-shadow: 2px 2px 5px #4461ae;
+  transition: color 750ms ease, text-shadow 750ms ease;
+}
+
+.universe-menu .sith-empire {
+  transition: color 750ms ease, text-shadow 750ms ease;
+}
+
+.universe-menu .sith-empire:hover {
+  color: #9d080a;
+  text-shadow: 2px 2px 5px #9d080a;
+  transition: color 750ms ease, text-shadow 750ms ease;
+}
+
+/*--- Homepage text styles ---*/
+.with-alinea {
+  text-indent: 1em;
+}
+
+.text-important {
+  text-align: right;
+  font-size: 1.5em;
+  color: #ebc991;
+  font-family: "PT Serif", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, Times, "Times New Roman", serif;
+}
+
+.text-speech {
+  color: #ebc991;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/*--- Abilities calculette styles ---*/
+.modifiers {
+  font-size: 0.7em;
+  text-align: left;
+}
+
+.increase, .decrease {
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  margin-right: 0.5em;
+  width: 1.5em;
+  height: 1.5em;
+  border: 1px solid #dba147;
+  background-color: #ebc991;
+  color: black;
+  border-radius: 5px;
+}
