@@ -16,9 +16,9 @@
 
     <nav class="sub-navigation">
         <h2 class="sub-navigation--title hidden">Navigation des races</h2>
-        <?php foreach ($races as $race): ?>
+        @foreach( $races as $race )
             <a class="sub-navigation--link" href="#<?php echo( $race[ "slug" ] ); ?>"><?php echo( $race[ "name" ] ); ?></a>
-        <?php endforeach; ?>
+        @endforeach
     </nav>
 
     @if( $races )
