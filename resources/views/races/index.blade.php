@@ -17,7 +17,7 @@
     <nav class="sub-navigation">
         <h2 class="sub-navigation--title hidden">Navigation des races</h2>
         <?php foreach ($races as $race): ?>
-            <a class="sub-navigation--link" href="#<?php echo( $race[ "name" ] ); ?>"><?php echo( $race[ "name" ] ); ?></a>
+            <a class="sub-navigation--link" href="#<?php echo( $race[ "slug" ] ); ?>"><?php echo( $race[ "name" ] ); ?></a>
         <?php endforeach; ?>
     </nav>
 
@@ -26,7 +26,7 @@
             @foreach( $races as $race )
                 <li id="<?php echo( $race[ "slug" ] ); ?>" class="content-list-item">
                     <h3 class="content-titles"><?php echo( $race[ "name" ] ); ?></h3>
-                    <img class="content-image race-image" src="{{ URL::asset( '<?php echo( $race[ "slug" ] ); ?>.jpg' ) }}" alt="<?php echo( $race[ "name" ] ); ?>" title="<?php echo( $race[ "name" ] ); ?>">
+                    <img class="content-image race-image" src="{{ URL::asset( '/img/races/' . $race[ "slug" ] . '.jpg' ) }}" alt="<?php echo( $race[ "name" ] ); ?>" title="<?php echo( $race[ "name" ] ); ?>">
                     <div class="race-text">
                         <p><span class="content-subtitle">Disponibilité :</span> <?php echo( $race[ "disponibility" ] ); ?></p>
                         <p><span class="content-subtitle">Caractéristiques :</span> <?php echo( $race[ "abilities" ] ); ?></p>

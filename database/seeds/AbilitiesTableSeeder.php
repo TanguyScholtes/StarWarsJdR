@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class AbilitiesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,7 +11,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this -> call( RacesTableSeeder::class );
-        $this -> call( AbilitiesTableSeeder::class );
+        DB::table( 'abilities' ) -> insert( include( 'abilities.php' ) );
     }
 }
