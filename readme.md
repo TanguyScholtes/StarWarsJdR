@@ -1,4 +1,4 @@
-<p align="center"><a href="http://tanguyscholtes.be/StarWarsJDR/" target="_blank"><img width="150"src="http://tanguyscholtes.be/StarWarsJDR/img/site-banner75.png"></a></p>
+<p align="center"><a href="http://tanguyscholtes.be/StarWarsJDR/" target="_blank"><img width="320"src="http://tanguyscholtes.be/StarWarsJDR/img/site-banner_x320.png"></a></p>
 
 ## About Star Wars JdR
 
@@ -39,7 +39,7 @@ As every fan does, I took some inspirations here and there while creating this g
 - [Star Wars official website](http://www.starwars.com/)
 - [Star Wars The Old Republic official website](http://www.swtor.com/)
 - [Star Wars Holonet](http://www.starwars-holonet.com/)
-- [Star Wars The Old Republic Wiki](http://swtor.wikia.com/wiki/Star_Wars:_The_Old_Republic_Wiki).
+- [Star Wars The Old Republic Wiki](http://swtor.wikia.com/wiki/Star_Wars:_The_Old_Republic_Wiki)
 - [Wookieepedia](http://starwars.wikia.com/wiki/Main_Page)
 
 ## License
