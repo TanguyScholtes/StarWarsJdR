@@ -26,14 +26,14 @@
     <nav class="sub-navigation">
         <h2 class="sub-navigation--title hidden">Navigation des compétences</h2>
         @foreach( $skills as $skill )
-            <a class="sub-navigation--link" href="#<?php echo( $skill[ "name" ] ); ?>"><?php echo( $skill[ "name" ] ); ?></a>
+            <a class="sub-navigation--link" href="#<?php echo( $skill[ "slug" ] ); ?>"><?php echo( $skill[ "name" ] ); ?></a>
         @endforeach
     </nav>
 
     @if( $skills )
         <ul class="content-list">
             @foreach( $skills as $skill )
-            <li id="<?php echo( $skill[ "name" ] ); ?>" class="content-list-item">
+            <li id="<?php echo( $skill[ "slug" ] ); ?>" class="content-list-item">
                 <h2 class="content-titles"><?php echo( $skill[ "name" ] ); ?> ( <a class="content-link" href="/abilities#<?php echo( $skill[ "abbrAbility" ] ); ?>"><?php echo( $skill[ "abbrAbility" ] ); ?></a> )</h2>
                 <p><?php echo( $skill[ "description" ] ); ?></p>
             </li>
