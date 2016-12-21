@@ -6,7 +6,7 @@
         <a class="main-navigation--link" href="/universe">Univers</a>
         <a class="main-navigation--link" href="/rules">Règles</a>
         <a class="main-navigation--link" href="/races">Races</a>
-        <a class="main-navigation--link" href="/classes">Classes</a>
+        <a class="main-navigation--link" href="/jobs">Classes</a>
         <a class="main-navigation--link" href="/abilities">Caractéristiques</a>
         <a class="main-navigation--link" href="/skills">Compétences</a>
         <a class="main-navigation--link" href="/feats">Dons</a>

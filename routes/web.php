@@ -31,8 +31,8 @@ Route::resource( 'races', 'RacesController' );
 Route::get( 'races/{race}/delete', 'RacesController@delete' ) -> name( 'races.delete' );
 
 //Classes
-Route::resource( 'classes', 'ClassesController' );
-Route::get( 'classes/{class}/delete', 'ClassesController@delete' ) -> name( 'classes.delete' );
+Route::resource( 'jobs', 'JobsController' );
+Route::get( 'jobs/{job}/delete', 'JobsController@delete' ) -> name( 'jobs.delete' );
 
 //Abilities
 Route::resource( 'abilities', 'AbilitiesController' );
