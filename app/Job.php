@@ -24,6 +24,6 @@ class Job extends Model
     ];
 
     public function skills () {
-        return $this -> belongsToMany( Skill::class ); //no need to redefine joinning table : available in Skill Model
+        return $this -> belongsToMany( Skill::class, "jobs_skills" ); //no need to redefine joinning table : available in Skill Model
     }
 }

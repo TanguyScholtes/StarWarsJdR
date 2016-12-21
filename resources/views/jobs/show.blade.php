@@ -11,8 +11,21 @@
         <img class="content-image" src="{{ URL::asset( '/img/classes/' . $job[ "slug" ] . '.jpg' ) }}" alt="{{ $job -> name }}" title="{{ $job -> name }}">
         <p>{{ $job -> desc }}</p>
         <p><span class="content-subtitle">PV de base :</span> {{ $job -> basePV }} + modificateur de <a class="content-link" href="/abilities#CONST">Constitution</a> * <a class="content-link" href="/rules#Exp">Niveau</a>.</p>
+        @if( $job -> baseForce )
+            <p><span class="content-subtitle">Points de Force :</span> 40 + ({{ $job -> baseForce }} + Mod. <a class="content-link" href="/abilities#SAG">Sagesse</a> + Mod. <a class="content-link" href="/abilities#CHAR">Charisme</a>) * Niveau.</p>
+        @endif
+        @if( $skills )
+            <p><span class="content-subtitle">Compétences de classe :</span>
+                @foreach( $skills as $skill )
+                    <a class="content-link" href="/skills{{ $skill[ 'slug' ] }}">{{ $skill[ 'name' ] }}</a> (<a class="content-link" href="/abilities#{{ $skill[ 'abbrAbility' ] }}">{{ $skill[ 'abbrAbility' ] }}</a>),
+                @endforeach
+            </p>
+        @endif
         <!-- compétences de classe et dons bonus -->
         <p><span class="content-subtitle">Fréquence des dons :</span> {{ $job -> featsFrequency }}</p>
+        @if( $job -> powersModifier )
+            <p><span class="content-subtitle">Pouvoirs par niveau :</span> {{ $job -> powersModifier }}</p>
+        @endif
         <p><span class="content-subtitle">Points de compétences au niveau 1 :</span> ({{ $job -> skillsModifier }} + Mod. <a class="content-link" href="/abilities#INTEL">Intel</a>) * 4 avec un minimum de 4.</p>
         <p><span class="content-subtitle">Points de compétences par niveau :</span> {{ $job -> skillsModifier }} + Mod. <a class="content-link" href="/abilities#INTEL">Intel</a> / 2, arrondi au supérieur.</p>
         <table class="content-table">
